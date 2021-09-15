@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Draggable Todo-list</title>
+</head>
+<body>
+  <div id="myModal" class="modal">
+    <div class="modal-header">
+    </div>
+    <input id="inputField" type="text">
+    <button id="submit_btn" class="btn">Add Backlog</button>
+  </div>
+  <div class="todo-container">
+    <div class="status" id="backlog">
+      <h1>Backlog</h1>
+      <button id="add_btn" name="button">+ New Todo</button>
+      <div class="card" draggable="true">
+        <p>Complete a Mini js-Project</p>
+        <span class="dlt_btn">&times</span>
+      </div>
+      <div class="card" draggable="true">
+        <p>Appointment with BBAcademy</p>
+        <span class="dlt_btn">&times</span>
+      </div>
+    </div>
+    <div class="status">
+      <h1>Planing</h1>
+    </div>
+    <div class="status">
+      <h1>In Progress</h1>
+    </div>
+    <div class="status">
+      <h1>Completed</h1>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
